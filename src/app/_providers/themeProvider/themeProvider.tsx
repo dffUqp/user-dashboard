@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+import { FC, PropsWithChildren, useMemo } from 'react';
 
 import CssBaseline from '@mui/material/CssBaseline';
 import {
@@ -15,11 +15,7 @@ import { componentsOverrides } from './overrides';
 import { palette } from './palette';
 import { typography } from './typography';
 
-type Props = {
-  children: React.ReactNode;
-};
-
-const ThemeProvider = ({ children }: Props) => {
+const ThemeProvider: FC<PropsWithChildren> = ({ children }) => {
   const presets = createPresets('default');
 
   const contrast = createContrast('default', 'dark');

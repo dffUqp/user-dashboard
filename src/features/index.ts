@@ -1,2 +1,2 @@
-export * from './UserTable';
-export * from './LineChart';
+export * from './lineChart';
+export * from './userTable';
