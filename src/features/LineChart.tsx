@@ -37,6 +37,13 @@ const LineChart: FC<LineChartProps> = ({ data }) => {
           responsive: true,
           maintainAspectRatio: false,
           aspectRatio: 1,
+          datasets: {
+            line: {
+              pointRadius: 4,
+              pointHoverRadius: 5,
+            },
+          },
+
           plugins: {
             legend: {
               align: 'end',
