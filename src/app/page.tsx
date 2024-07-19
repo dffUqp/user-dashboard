@@ -53,7 +53,7 @@ function HomePage() {
         marginBottom="24px"
         rowGap="10px"
       >
-        <Typography variant="h4">User Analytics</Typography>
+        <Typography variant="h4">User Dashboard</Typography>
       </Stack>
 
       <Stack width="100%" direction="column" spacing={3}>
